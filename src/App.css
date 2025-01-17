@@ -1,0 +1,197 @@
+:root {
+  --background-light: #ffffff;
+  --text-light: #000000;
+  --background-dark: #111827;
+  --text-dark: #ffffff;
+  --text-dark-secondary: #bbbbbb;
+  --text-dark-highlight: #f0f0f0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode h1,
+body.dark-mode h5,
+body.dark-mode a {
+  color: var(--text-dark-highlight);
+}
+
+body.dark-mode p,
+body.dark-mode i {
+  color: var(--text-dark-highlight);
+}
+
+body.dark-mode .hero .heroH1 {
+  color: var(--text-dark-highlight);
+}
+
+body.dark-mode .hero .Hsell,
+body.dark-mode .hero .HRent,
+body.dark-mode .hero .buy {
+  color: #111827;
+}
+
+.hero {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #4e5562;
+}
+
+.hero .heroH1 {
+  font-size: 56px;
+  line-height: 67px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #111827;
+}
+
+.custom-font-size {
+  font-size: 150px;
+  color: white;
+}
+
+.hero .buy {
+  bottom: 62%;
+  left: 45%;
+}
+
+.hero .sell .Hsell {
+  transform: rotate(270deg);
+  bottom: 68%;
+  left: -30%;
+}
+
+.hero .rent .HRent {
+  bottom: 71%;
+  left: -5%;
+}
+
+.hero .sell img {
+  border-radius: 10px;
+  background-color: #3d7a81;
+}
+
+.hero form {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgb(228, 227, 227);
+}
+
+.hero .formcont {
+  top: 88%;
+  left: 8%;
+}
+
+.hero .formcont input,
+.hero .formcont select {
+  border: none;
+  border-right: 1px solid rgb(228, 227, 227);
+}
+
+@media screen and (max-width:1200px) {
+  .hero {
+    position: static;
+    background-color: #f5f7fa;
+    color: white;
+    text-align: center;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero .custom-font-size {
+    display: none;
+  }
+
+  .hero h1 {
+    color: #111827;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+
+  .hero .formcont {
+    position: static;
+
+  }
+}
+
+.card {
+  height: 400px !important;
+  background-color: #fff4ea !important;
+  align-items: center;
+}
+
+#gray {
+  background-color: #3d7a81 !important;
+
+}
+
+.card img {
+  bottom: 0px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card a {
+  background-color: #081026;
+  border: none;
+}
+
+.card-body a:hover {
+  background-color: #040916;
+}
+
+#CategoriesCont {
+  border: 1px solid rgb(228, 227, 227);
+  border-radius: 10px;
+}
+
+#CategoriesCont .row .rowCont {
+  border-right: 1px solid rgb(228, 227, 227);
+}
+
+#CategoriesCont .row div img {
+  height: 20px;
+  width: 20px;
+}
+
+.cart {
+  position: relative;
+  margin-inline: 10px;
+}
+.cart p {
+position: absolute;
+border-radius: 50%;
+width: 25px;
+height: 25px;
+text-align: center;
+left: 8px;
+top: -14px;
+}
+.cart ~ button {
+  margin-right: 10px;
+}
+.remove {
+  display: none;
+}
